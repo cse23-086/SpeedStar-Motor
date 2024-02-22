@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .transparent-image {
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
             opacity: 0.5; /* Adjust the value between 0 and 1 for the desired transparency */
         }
     </style>
 </head>
 <body>
 
-    <img src="benz snow.jpg" alt="Your Image" class="transparent-image">
+    <video autoplay loop class="transparent-video">
+        <!-- Replace "your-video.mp4" with the actual path or URL of your video -->
+        <source src="https://youtu.be/ZUDDDTuqx9o?si=BNb0VqUOPcywFGbt" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
 </body>
 </html>
